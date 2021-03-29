@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:phal_flutter_todo_app/constants/colors.dart';
+import 'package:phal_flutter_todo_app/constants/dimens.dart';
 import 'package:phal_flutter_todo_app/constants/strings.dart';
 import 'package:phal_flutter_todo_app/routers/app_routers.dart';
 
@@ -82,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                       Strings.login,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                        fontSize: Dimens.largeFontSize,
                       ),
                     ),
                     onPressed: () {

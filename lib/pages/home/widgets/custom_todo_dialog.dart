@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:get/get.dart';
+import 'package:phal_flutter_todo_app/constants/dimens.dart';
 import 'package:phal_flutter_todo_app/data/db/models/todo_model.dart';
 import 'package:phal_flutter_todo_app/redux/actions/todo_action.dart';
 import 'package:phal_flutter_todo_app/redux/states/app_state.dart';
@@ -31,16 +32,16 @@ class _CustomTodoDialogState extends State<CustomTodoDialog> {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)), //this right here
       child: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(15).copyWith(bottom: 30),
+          padding: EdgeInsets.all(Dimens.defaultPadding).copyWith(bottom: 30),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.all(15),
+                padding: EdgeInsets.all(Dimens.defaultPadding),
                 child: Text(widget.title),
               ),
               Padding(
-                padding: EdgeInsets.all(15),
+                padding: EdgeInsets.all(Dimens.defaultPadding),
                 child: TextField(
                   controller: _taskController,
                   decoration: InputDecoration(
@@ -50,7 +51,7 @@ class _CustomTodoDialogState extends State<CustomTodoDialog> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(15),
+                padding: EdgeInsets.all(Dimens.defaultPadding),
                 child: TextField(
                   controller: _noteController,
                   decoration: InputDecoration(
@@ -68,7 +69,7 @@ class _CustomTodoDialogState extends State<CustomTodoDialog> {
                       "Cancel",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 16,
+                        fontSize: Dimens.largeFontSize,
                       ),
                     ),
                     style: TextButton.styleFrom(
@@ -98,7 +99,7 @@ class _CustomTodoDialogState extends State<CustomTodoDialog> {
                           'Done',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 16,
+                            fontSize: Dimens.largeFontSize,
                           ),
                         ),
                       ))

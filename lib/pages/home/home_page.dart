@@ -10,7 +10,10 @@ import 'package:phal_flutter_todo_app/data/db/models/tab_item_model.dart';
 import 'package:phal_flutter_todo_app/pages/home/widgets/bottom_bar_item.dart';
 import 'package:phal_flutter_todo_app/pages/home/widgets/custom_todo_dialog.dart';
 import 'package:phal_flutter_todo_app/pages/home/widgets/tabbar_controller.dart';
+import 'package:phal_flutter_todo_app/redux/actions/auth_action.dart';
+import 'package:phal_flutter_todo_app/redux/selectors/app_selector.dart';
 import 'package:phal_flutter_todo_app/routers/app_routers.dart';
+import 'package:phal_flutter_todo_app/utils/utils.dart';
 
 enum TabType { all, complete, incomplete }
 
@@ -23,13 +26,13 @@ class _HomePageState extends State<HomePage> {
   _appBarMenuSelect(value) {
     switch (value) {
       case Strings.about:
-        Get.defaultDialog(
+        Utils.showTodoDialog(
           title: Strings.appName,
-          content: Text("JB Pha Le"),
+          content: Text("Author: JB Pha Le"),
         );
         break;
       case Strings.logout:
-        Get.offAllNamed(Routes.LOGIN);
+        storeSelector(context).dispatch(LogoutAction());
         break;
     }
     print(value);

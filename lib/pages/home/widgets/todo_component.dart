@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:phal_flutter_todo_app/constants/dimens.dart';
 import 'package:phal_flutter_todo_app/data/db/models/todo_model.dart';
 import 'package:phal_flutter_todo_app/pages/home/widgets/custom_todo_dialog.dart';
 import 'package:phal_flutter_todo_app/widgets/loading_widget.dart';
@@ -40,13 +41,13 @@ class _TodoListComponentState extends State<TodoListComponent> {
         key: UniqueKey(),
         background: _dismissibleBackground(),
         secondaryBackground: _dismissibleSecondaryBackground(),
-        confirmDismiss: (DismissDirection direction) async {
-          return direction == DismissDirection.endToStart ? _confirmDeleteItem() : true;
+        confirmDismiss: (DismissDirection direction) {
+          // false: not dismiss item
+          return direction == DismissDirection.endToStart ? _confirmDeleteItem() : _editTaskItem();
         },
         onDismissed: (DismissDirection direction) {
-          setState(() {
-            return direction == DismissDirection.endToStart ? _deleteItem(index) : true;
-          });
+          // false: not dismiss item
+          return direction == DismissDirection.endToStart ? _deleteItem(index) : false;
         },
         child: Card(
           margin: EdgeInsets.all(8),
@@ -97,46 +98,48 @@ class _TodoListComponentState extends State<TodoListComponent> {
     );
   }
 
-  _textItemStyle(index) {
+  TextStyle _textItemStyle(index) {
     return (widget.todoList[index].isDone)
         ? TextStyle(color: Colors.red, decoration: TextDecoration.lineThrough)
         : TextStyle(color: Theme.of(context).textTheme.bodyText1.color);
   }
 
-  _dismissibleBackground() {
+  Widget _dismissibleBackground() {
     return Container(
       color: Colors.blue,
       child: Padding(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(Dimens.defaultPadding),
         child: Row(
           children: <Widget>[
             Icon(Icons.check_box, color: Colors.white),
-            Text('Move to complete', style: TextStyle(color: Colors.white)),
+            Text('Edit', style: TextStyle(color: Colors.white)),
           ],
         ),
       ),
     );
   }
 
-  _dismissibleSecondaryBackground() {
+  Widget _dismissibleSecondaryBackground() {
     return Container(
       color: Colors.red,
       child: Padding(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(Dimens.defaultPadding),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Icon(Icons.delete, color: Colors.white),
-            Text('Move to trash', style: TextStyle(color: Colors.white)),
+            Text('Delete', style: TextStyle(color: Colors.white)),
           ],
         ),
       ),
     );
   }
 
-  _deleteItem(index) {
+  void _deleteItem(index) {
     var removed = widget.todoList[index];
-    widget.todoList.removeAt(index);
+    setState(() {
+      widget.todoList.removeAt(index);
+    });
     Get.snackbar('Task removed', 'The task "${removed.text}" was successfully removed.',
         mainButton: TextButton(
           child: Text('Undo'),
@@ -153,7 +156,7 @@ class _TodoListComponentState extends State<TodoListComponent> {
         ));
   }
 
-  _confirmDeleteItem() async {
+  Future<bool> _confirmDeleteItem() async {
     var isDelete = false;
     await showDialog(
       context: context,
@@ -166,26 +169,29 @@ class _TodoListComponentState extends State<TodoListComponent> {
               child: const Text("Delete"),
               onPressed: () {
                 Get.back();
-                isDelete = true;
+                isDelete = true; //dismiss item
               },
             ),
             TextButton(
               child: const Text("Cancel"),
               onPressed: () {
-                Get.back();
+                setState(() => Get.back());
               },
             ),
           ],
         );
       },
     );
+    // false: not dismiss item
     return Future.value(isDelete);
   }
 
-  _editTaskItem() async {
-    return await showDialog(
+  Future<bool> _editTaskItem() async {
+    await showDialog(
       context: context,
       builder: (context) => CustomTodoDialog(title: "Edit Task"),
     );
+    // false: not dismiss item
+    return Future.value(false);
   }
 }

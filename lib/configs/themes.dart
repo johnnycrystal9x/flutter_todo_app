@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:phal_flutter_todo_app/constants/colors.dart';
+import 'package:phal_flutter_todo_app/constants/dimens.dart';
 import 'package:phal_flutter_todo_app/constants/strings.dart';
 
 final ThemeData appTheme = ThemeData(
@@ -39,7 +40,7 @@ final ThemeData appTheme = ThemeData(
 );
 
 const TextStyle textDef = TextStyle(
-  fontSize: 12,
+  fontSize: Dimens.smallFontSize,
   fontFamily: Strings.fontMulish,
   color: AppColors.neutralColor1,
   fontWeight: FontWeight.normal,
@@ -47,7 +48,7 @@ const TextStyle textDef = TextStyle(
 );
 
 const TextStyle bodyStyle = TextStyle(
-  fontSize: 16,
+  fontSize: Dimens.largeFontSize,
   fontFamily: Strings.fontMulish,
   color: AppColors.neutralColor1,
   fontWeight: FontWeight.bold,
@@ -55,7 +56,7 @@ const TextStyle bodyStyle = TextStyle(
 );
 
 const TextStyle bodySev = TextStyle(
-  fontSize: 14,
+  fontSize: Dimens.mediumFontSize,
   fontFamily: Strings.fontMulish,
   color: AppColors.neutralColor3,
   fontWeight: FontWeight.normal,
@@ -63,7 +64,7 @@ const TextStyle bodySev = TextStyle(
 );
 
 const TextStyle bodySevActive = TextStyle(
-  fontSize: 14,
+  fontSize: Dimens.mediumFontSize,
   fontFamily: Strings.fontMulish,
   color: AppColors.neutralColor1,
   fontWeight: FontWeight.normal,

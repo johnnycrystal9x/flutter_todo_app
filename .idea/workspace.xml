@@ -20,59 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38e7d1e2-1cd4-4075-95b3-4225fbdc9d17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/ic_task_complete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ic_task_incomplete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ic_task_list.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Runner/GoogleService-Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data/db/models/tab_item_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data/db/models/todo_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data/network/firebase_manager.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/home/widgets/bottom_bar_item.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/home/widgets/tabbar_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/actions/auth_action.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/actions/todo_action.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/middlewares/auth_middleware.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/reducers/auth_reducer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/reducers/todo_reducer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/selectors/app_selector.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/selectors/auth_selector.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/selectors/todo_selector.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/states/auth_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/utils.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/loading_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/png/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/png/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/svg/ic_add.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/configs/themes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configs/themes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/assets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/assets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/colors.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/constants/dimens.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/dimens.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/strings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/strings.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home/fragments/all_fragment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/fragments/all_fragment.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home/fragments/complete_fragment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/fragments/complete_fragment.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home/fragments/incomplete_fragment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/fragments/incomplete_fragment.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/home/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/login/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/login/login_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/actions/home_action.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/app_store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/app_store.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/middlewares/home_middleware.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/reducers/app_reducer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/reducers/app_reducer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/reducers/home_reducer.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/states/app_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/states/app_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/states/home_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/states/todo_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routers/app_pages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routers/app_pages.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/routers/app_routers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routers/app_routers.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/logger.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/logger.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/utils.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +59,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/redux/selectors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -159,22 +116,26 @@
       <screen x="0" y="25" width="1280" height="720" />
     </state>
     <state x="100" y="125" width="1080" height="520" key="AVDManager/0.25.1280.720@0.25.1280.720" timestamp="1617038990049" />
-    <state width="1238" height="332" key="GridCell.Tab.0.bottom" timestamp="1617040173858">
+    <state x="639" y="216" key="FileChooserDialogImpl" timestamp="1617041129422">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.bottom/0.25.1280.720@0.25.1280.720" timestamp="1617040173858" />
-    <state width="1238" height="332" key="GridCell.Tab.0.center" timestamp="1617040173858">
+    <state x="639" y="216" key="FileChooserDialogImpl/0.25.1280.720@0.25.1280.720" timestamp="1617041129422" />
+    <state width="1238" height="332" key="GridCell.Tab.0.bottom" timestamp="1617043627087">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.center/0.25.1280.720@0.25.1280.720" timestamp="1617040173858" />
-    <state width="1238" height="332" key="GridCell.Tab.0.left" timestamp="1617040173857">
+    <state width="1238" height="332" key="GridCell.Tab.0.bottom/0.25.1280.720@0.25.1280.720" timestamp="1617043627087" />
+    <state width="1238" height="332" key="GridCell.Tab.0.center" timestamp="1617043627086">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.left/0.25.1280.720@0.25.1280.720" timestamp="1617040173857" />
-    <state width="1238" height="332" key="GridCell.Tab.0.right" timestamp="1617040173858">
+    <state width="1238" height="332" key="GridCell.Tab.0.center/0.25.1280.720@0.25.1280.720" timestamp="1617043627086" />
+    <state width="1238" height="332" key="GridCell.Tab.0.left" timestamp="1617043627085">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.right/0.25.1280.720@0.25.1280.720" timestamp="1617040173858" />
+    <state width="1238" height="332" key="GridCell.Tab.0.left/0.25.1280.720@0.25.1280.720" timestamp="1617043627085" />
+    <state width="1238" height="332" key="GridCell.Tab.0.right" timestamp="1617043627086">
+      <screen x="0" y="25" width="1280" height="720" />
+    </state>
+    <state width="1238" height="332" key="GridCell.Tab.0.right/0.25.1280.720@0.25.1280.720" timestamp="1617043627086" />
     <state x="141" y="25" width="997" height="720" key="SettingsEditor" timestamp="1617037501300">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
@@ -183,10 +144,10 @@
       <screen x="0" y="25" width="1280" height="720" />
     </state>
     <state x="100" y="125" width="1080" height="520" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1280.720@0.25.1280.720" timestamp="1616836913097" />
-    <state x="332" y="140" width="615" height="576" key="find.popup" timestamp="1617039591376">
+    <state x="422" y="169" width="858" height="576" key="find.popup" timestamp="1617041162549">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state x="332" y="140" width="615" height="576" key="find.popup/0.25.1280.720@0.25.1280.720" timestamp="1617039591376" />
+    <state x="422" y="169" width="858" height="576" key="find.popup/0.25.1280.720@0.25.1280.720" timestamp="1617041162549" />
     <state x="305" y="69" width="670" height="676" key="search.everywhere.popup" timestamp="1616828616941">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
@@ -194,58 +155,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart</url>
-          <line>164</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>28</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>47</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>66</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/reducers/todo_reducer.dart</url>
-          <line>16</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/reducers/todo_reducer.dart</url>
-          <line>24</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/reducers/todo_reducer.dart</url>
-          <line>32</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/reducers/todo_reducer.dart</url>
-          <line>39</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>26</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>45</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint suspend="THREAD" type="dart-exception" />
       </default-breakpoints>
