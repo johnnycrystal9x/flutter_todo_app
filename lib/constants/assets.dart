@@ -1,10 +1,6 @@
-class AssetsPNG {
-  static const String _baseAssets = 'assets/images/png/';
-  static const String background = _baseAssets + 'background.svg';
-  static const String logo = _baseAssets + 'logo.svg';
-}
-
-class AssetsSVG {
-  static const String _baseAssets = 'assets/images/svg/';
-  static const String iconAdd = _baseAssets + 'ic_add.svg';
+class Images {
+  static const String _baseAssets = 'assets/images/';
+  static const String iconTaskList = _baseAssets + 'ic_task_list.svg';
+  static const String iconTaskComplete = _baseAssets + 'ic_task_complete.svg';
+  static const String iconTaskIncomplete = _baseAssets + 'ic_task_incomplete.svg';
 }

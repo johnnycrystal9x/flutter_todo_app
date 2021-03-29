@@ -2,29 +2,35 @@
 /// johnnycrystal9x@gmail.com
 
 import 'package:equatable/equatable.dart';
-import 'package:phal_flutter_todo_app/redux/states/home_state.dart';
+import 'package:phal_flutter_todo_app/redux/states/auth_state.dart';
+import 'package:phal_flutter_todo_app/redux/states/todo_state.dart';
 
 class AppState extends Equatable {
-  final HomeState homeState;
+  final AuthState authState;
+  final TodoState todoState;
 
   const AppState({
-    this.homeState,
+    this.authState,
+    this.todoState,
   });
 
   factory AppState.initial() {
     return AppState(
-      homeState: HomeState.initial(),
+      authState: AuthState.initial(),
+      todoState: TodoState.initial(),
     );
   }
 
   AppState copyWith() {
     return AppState(
-      homeState: homeState ?? this.homeState,
+      authState: authState ?? this.authState,
+      todoState: todoState ?? this.todoState,
     );
   }
 
   @override
   List<Object> get props => <Object>[
-        homeState,
+        authState,
+        todoState,
       ];
 }

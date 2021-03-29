@@ -10,6 +10,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:get/get.dart';
 import 'package:phal_flutter_todo_app/configs/themes.dart';
 import 'package:phal_flutter_todo_app/constants/strings.dart';
+import 'package:phal_flutter_todo_app/data/network/firebase_manager.dart';
 import 'package:phal_flutter_todo_app/redux/app_store.dart';
 import 'package:phal_flutter_todo_app/routers/app_pages.dart';
 import 'package:phal_flutter_todo_app/utils/logger.dart';
@@ -18,6 +19,9 @@ import 'package:responsive_framework/responsive_framework.dart';
 Future<void> main() async {
   // Ensure initialized
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Init firebase
+  await FirebaseManager.initializeFirebase();
 
   // Set App portrait mode
   await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
@@ -46,7 +50,7 @@ class TodoApp extends StatelessWidget {
         logWriterCallback: Logger.write,
         debugShowCheckedModeBanner: false,
         initialRoute: AppPages.INITIAL,
-        getPages: AppPages.routes,
+        getPages: AppPages.pages,
         theme: appTheme,
         builder: (BuildContext context, Widget child) {
           return ResponsiveWrapper.builder(

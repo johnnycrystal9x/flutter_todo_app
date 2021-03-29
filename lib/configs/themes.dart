@@ -3,60 +3,69 @@
 
 import 'package:flutter/material.dart';
 import 'package:phal_flutter_todo_app/constants/colors.dart';
+import 'package:phal_flutter_todo_app/constants/strings.dart';
 
 final ThemeData appTheme = ThemeData(
   backgroundColor: Colors.white,
-  canvasColor: AppColors.backgroundTwoColor,
+  canvasColor: AppColors.backgroundColor2,
   primaryColor: AppColors.primaryColor,
-  accentColor: AppColors.accentOneColor,
+  accentColor: AppColors.accentColor,
   appBarTheme: AppBarTheme(
-    elevation: 0,
-    color: AppColors.backgroundTwoColor,
+    elevation: 1,
+    color: AppColors.backgroundColor2,
     centerTitle: true,
     textTheme: TextTheme(
       headline6: bodyStyle,
     ),
     iconTheme: const IconThemeData(
-      color: AppColors.accentOneColor,
+      color: AppColors.accentColor,
     ),
   ),
-  fontFamily: 'Mulish',
+  fontFamily: Strings.fontMulish,
   buttonTheme: const ButtonThemeData(
     buttonColor: AppColors.primaryColor,
   ),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-    backgroundColor: AppColors.backgroundTwoColor,
+    backgroundColor: AppColors.backgroundColor2,
     selectedIconTheme: IconThemeData(color: AppColors.primaryColor, size: 16),
-    selectedLabelStyle: bodySevActivated,
+    selectedLabelStyle: bodySevActive,
     selectedItemColor: AppColors.primaryColor,
     showUnselectedLabels: true,
     showSelectedLabels: true,
-    unselectedIconTheme: IconThemeData(color: AppColors.neutralThreeColor, size: 16),
-    unselectedItemColor: AppColors.neutralThreeColor,
+    unselectedIconTheme: IconThemeData(color: AppColors.neutralColor2, size: 16),
+    unselectedItemColor: AppColors.neutralColor2,
     unselectedLabelStyle: bodySev,
   ),
 );
 
+const TextStyle textDef = TextStyle(
+  fontSize: 12,
+  fontFamily: Strings.fontMulish,
+  color: AppColors.neutralColor1,
+  fontWeight: FontWeight.normal,
+  fontStyle: FontStyle.normal,
+);
+
 const TextStyle bodyStyle = TextStyle(
   fontSize: 16,
-  fontFamily: 'Mulish',
-  color: AppColors.neutralOneColor,
+  fontFamily: Strings.fontMulish,
+  color: AppColors.neutralColor1,
   fontWeight: FontWeight.bold,
   fontStyle: FontStyle.normal,
 );
 
 const TextStyle bodySev = TextStyle(
   fontSize: 14,
-  fontFamily: 'Mulish',
-  color: AppColors.neutralFourColor,
+  fontFamily: Strings.fontMulish,
+  color: AppColors.neutralColor3,
   fontWeight: FontWeight.normal,
   fontStyle: FontStyle.normal,
 );
 
-const TextStyle bodySevActivated = TextStyle(
+const TextStyle bodySevActive = TextStyle(
   fontSize: 14,
-  fontFamily: 'Mulish',
-  color: AppColors.neutralOneColor,
+  fontFamily: Strings.fontMulish,
+  color: AppColors.neutralColor1,
   fontWeight: FontWeight.normal,
   fontStyle: FontStyle.normal,
 );
