@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38e7d1e2-1cd4-4075-95b3-4225fbdc9d17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/redux/reducers/todo_reducer_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_resources/todo_state_resource.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lib/data/db" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/redux/selectors" />
       <recent name="$PROJECT_DIR$/lib/redux/states" />
@@ -65,16 +72,26 @@
       <recent name="$PROJECT_DIR$/lib/pages/home/widgets" />
       <recent name="$PROJECT_DIR$/lib/pages/home/models" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/data/db" />
-      <recent name="$PROJECT_DIR$/assets/images" />
-    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flutter Test.tests in todo_middleware_test.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="tests in todo_middleware_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/redux/middlewares/todo_middleware_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in todo_reducer_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/redux/reducers/todo_reducer_test.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in todo_middleware_test.dart" />
+        <item itemvalue="Flutter Test.tests in todo_reducer_test.dart" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -114,22 +131,22 @@
       <screen x="0" y="25" width="1280" height="720" />
     </state>
     <state x="639" y="216" key="FileChooserDialogImpl/0.25.1280.720@0.25.1280.720" timestamp="1617041129422" />
-    <state width="1238" height="332" key="GridCell.Tab.0.bottom" timestamp="1617097857049">
+    <state width="1238" height="309" key="GridCell.Tab.0.bottom" timestamp="1617121477726">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.bottom/0.25.1280.720@0.25.1280.720" timestamp="1617097857049" />
-    <state width="1238" height="332" key="GridCell.Tab.0.center" timestamp="1617097857049">
+    <state width="1238" height="309" key="GridCell.Tab.0.bottom/0.25.1280.720@0.25.1280.720" timestamp="1617121477726" />
+    <state width="1238" height="309" key="GridCell.Tab.0.center" timestamp="1617121477724">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.center/0.25.1280.720@0.25.1280.720" timestamp="1617097857049" />
-    <state width="1238" height="332" key="GridCell.Tab.0.left" timestamp="1617097857049">
+    <state width="1238" height="309" key="GridCell.Tab.0.center/0.25.1280.720@0.25.1280.720" timestamp="1617121477724" />
+    <state width="1238" height="309" key="GridCell.Tab.0.left" timestamp="1617121477724">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.left/0.25.1280.720@0.25.1280.720" timestamp="1617097857049" />
-    <state width="1238" height="332" key="GridCell.Tab.0.right" timestamp="1617097857049">
+    <state width="1238" height="309" key="GridCell.Tab.0.left/0.25.1280.720@0.25.1280.720" timestamp="1617121477724" />
+    <state width="1238" height="309" key="GridCell.Tab.0.right" timestamp="1617121477725">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.right/0.25.1280.720@0.25.1280.720" timestamp="1617097857049" />
+    <state width="1238" height="309" key="GridCell.Tab.0.right/0.25.1280.720@0.25.1280.720" timestamp="1617121477725" />
     <state x="141" y="25" width="997" height="720" key="SettingsEditor" timestamp="1617037501300">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
@@ -151,26 +168,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>121</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>106</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>122</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
-          <line>125</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart</url>
           <line>175</line>
           <option name="timeStamp" value="5" />
@@ -184,6 +181,9 @@
       <configuration name="FlutterRunConfigurationType">
         <watch expression="action.todoId" />
         <watch expression="widget.todoList[index].id" />
+      </configuration>
+      <configuration name="FlutterTestConfigType">
+        <watch expression="_store.state" />
       </configuration>
     </watches-manager>
   </component>
