@@ -1,6 +1,8 @@
 # flutter_todo_app
 
-A new Flutter application using Redux
+A new Flutter application
+- Use Redux to State management
+- Use Firebase FireStore to Data structures
 
 ## Getting Started
 
