@@ -21,14 +21,14 @@ class TodoModel extends Equatable {
   });
 
   TodoModel copyWith({
-    String key,
+    String id,
     String text,
     String note,
     bool isDone,
-    bool userId,
+    String userId,
   }) {
     return TodoModel(
-      id: key ?? this.id,
+      id: id ?? this.id,
       text: text ?? this.text,
       note: note ?? this.note,
       isDone: isDone ?? this.isDone,

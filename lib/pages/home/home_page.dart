@@ -1,3 +1,6 @@
+/// Created by JB Pha Le on 3/24/21.
+/// johnnycrystal9x@gmail.com
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
@@ -7,15 +10,14 @@ import 'package:phal_flutter_todo_app/pages/home/fragments/all_fragment.dart';
 import 'package:phal_flutter_todo_app/pages/home/fragments/complete_fragment.dart';
 import 'package:phal_flutter_todo_app/pages/home/fragments/incomplete_fragment.dart';
 import 'package:phal_flutter_todo_app/data/db/models/tab_item_model.dart';
-import 'package:phal_flutter_todo_app/pages/home/widgets/bottom_bar_item.dart';
+import 'package:phal_flutter_todo_app/pages/home/widgets/bottom_tab_item.dart';
 import 'package:phal_flutter_todo_app/pages/home/widgets/custom_todo_dialog.dart';
-import 'package:phal_flutter_todo_app/pages/home/widgets/tabbar_controller.dart';
+import 'package:phal_flutter_todo_app/pages/home/widgets/bottom_tab_controller.dart';
 import 'package:phal_flutter_todo_app/redux/actions/auth_action.dart';
 import 'package:phal_flutter_todo_app/redux/selectors/app_selector.dart';
-import 'package:phal_flutter_todo_app/routers/app_routers.dart';
 import 'package:phal_flutter_todo_app/utils/utils.dart';
 
-enum TabType { all, complete, incomplete }
+enum BottomTabType { all, complete, incomplete }
 
 class HomePage extends StatefulWidget {
   @override
@@ -23,7 +25,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  _appBarMenuSelect(value) {
+  void _appBarMenuSelect(value) {
     switch (value) {
       case Strings.about:
         Utils.showTodoDialog(
@@ -38,38 +40,38 @@ class _HomePageState extends State<HomePage> {
     print(value);
   }
 
-  _buildBodyBottomTab() {
-    switch (Get.find<TabBarController>().tabType) {
-      case TabType.all:
+  Widget _buildBodyBottomTab() {
+    switch (Get.find<BottomTabController>().tabType) {
+      case BottomTabType.all:
         return AllFragment();
-      case TabType.complete:
+      case BottomTabType.complete:
         return CompleteFragment();
-      case TabType.incomplete:
+      case BottomTabType.incomplete:
         return IncompleteFragment();
       default:
         return Container(color: AppColors.backgroundColor1);
     }
   }
 
-  _buildBottomNavigationBar() {
+  Widget _buildBottomNavigationBar() {
     return BottomAppBar(
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: List<BottomBarItem>.generate(Get.find<TabBarController>().tabs.length, (int index) {
-          final TabItemModel _item = Get.find<TabBarController>().tabs[index];
-          return BottomBarItem(
+        children: List<BottomTabItem>.generate(Get.find<BottomTabController>().tabs.length, (int index) {
+          final TabItemModel _item = Get.find<BottomTabController>().tabs[index];
+          return BottomTabItem(
             tabItem: _item,
-            iconColor: Get.find<TabBarController>().tabColor(_item.type),
+            iconColor: Get.find<BottomTabController>().tabColor(_item.type),
           );
         }),
       ),
     );
   }
 
-  _buildFloatingActionButton() {
+  Widget _buildFloatingActionButton() {
     return Visibility(
-      visible: !Get.find<TabBarController>().isKeyboardVisible,
+      visible: !Get.find<BottomTabController>().isKeyboardVisible,
       child: FloatingActionButton(
         backgroundColor: Colors.green,
         onPressed: () async => await showDialog(
@@ -90,8 +92,8 @@ class _HomePageState extends State<HomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return GetBuilder<TabBarController>(
-        init: TabBarController(),
+    return GetBuilder<BottomTabController>(
+        init: BottomTabController(),
         builder: (_) {
           return WillPopScope(
             onWillPop: _.onWillPop,

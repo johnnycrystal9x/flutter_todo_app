@@ -6,7 +6,7 @@ class TabItemModel extends Equatable {
 
   final String label;
   final String icon;
-  final TabType type;
+  final BottomTabType type;
 
   @override
   List<Object> get props => <Object>[

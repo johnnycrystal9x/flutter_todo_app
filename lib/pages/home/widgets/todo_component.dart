@@ -1,8 +1,13 @@
+/// Created by JB Pha Le on 3/24/21.
+/// johnnycrystal9x@gmail.com
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:phal_flutter_todo_app/constants/dimens.dart';
 import 'package:phal_flutter_todo_app/data/db/models/todo_model.dart';
 import 'package:phal_flutter_todo_app/pages/home/widgets/custom_todo_dialog.dart';
+import 'package:phal_flutter_todo_app/redux/actions/todo_action.dart';
+import 'package:phal_flutter_todo_app/redux/selectors/app_selector.dart';
 import 'package:phal_flutter_todo_app/widgets/loading_widget.dart';
 
 class TodoListComponent extends StatefulWidget {
@@ -43,7 +48,7 @@ class _TodoListComponentState extends State<TodoListComponent> {
         secondaryBackground: _dismissibleSecondaryBackground(),
         confirmDismiss: (DismissDirection direction) {
           // false: not dismiss item
-          return direction == DismissDirection.endToStart ? _confirmDeleteItem() : _editTaskItem();
+          return direction == DismissDirection.endToStart ? _confirmDeleteItem(index) : _editTaskItem(widget.todoList[index]);
         },
         onDismissed: (DismissDirection direction) {
           // false: not dismiss item
@@ -75,7 +80,7 @@ class _TodoListComponentState extends State<TodoListComponent> {
               children: [
                 IconButton(
                   icon: Icon(Icons.edit),
-                  onPressed: () => _editTaskItem(),
+                  onPressed: () => _editTaskItem(widget.todoList[index]),
                 ),
                 IconButton(
                   icon: Icon(
@@ -83,7 +88,7 @@ class _TodoListComponentState extends State<TodoListComponent> {
                     color: Colors.red,
                   ),
                   onPressed: () {
-                    _confirmDeleteItem().then((value) {
+                    _confirmDeleteItem(index).then((value) {
                       if (value) setState(() => _deleteItem(index));
                     });
                   },
@@ -156,7 +161,7 @@ class _TodoListComponentState extends State<TodoListComponent> {
         ));
   }
 
-  Future<bool> _confirmDeleteItem() async {
+  Future<bool> _confirmDeleteItem(int index) async {
     var isDelete = false;
     await showDialog(
       context: context,
@@ -168,6 +173,7 @@ class _TodoListComponentState extends State<TodoListComponent> {
             TextButton(
               child: const Text("Delete"),
               onPressed: () {
+                storeSelector(context).dispatch(DeleteTodoAction(todoId: widget.todoList[index].id));
                 Get.back();
                 isDelete = true; //dismiss item
               },
@@ -186,10 +192,13 @@ class _TodoListComponentState extends State<TodoListComponent> {
     return Future.value(isDelete);
   }
 
-  Future<bool> _editTaskItem() async {
+  Future<bool> _editTaskItem(todoModel) async {
     await showDialog(
       context: context,
-      builder: (context) => CustomTodoDialog(title: "Edit Task"),
+      builder: (context) => CustomTodoDialog(
+        title: "Edit Task",
+        todoModel: todoModel,
+      ),
     );
     // false: not dismiss item
     return Future.value(false);

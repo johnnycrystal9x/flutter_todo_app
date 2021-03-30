@@ -21,12 +21,12 @@ class LoadAllTodoListSuccessAction {
 }
 
 class LoadAllTodoListFailureAction {
-  final String error;
+  final String errorMessage;
 
-  LoadAllTodoListFailureAction({this.error});
+  LoadAllTodoListFailureAction({this.errorMessage});
 
   String toString() {
-    return 'LoadAllTodoListFailureAction{error: ${this.error}}';
+    return 'LoadAllTodoListFailureAction{errorMessage: ${this.errorMessage}}';
   }
 }
 
@@ -47,12 +47,12 @@ class LoadCompleteTodoListSuccessAction {
 }
 
 class LoadCompleteTodoListFailureAction {
-  final String error;
+  final String errorMessage;
 
-  LoadCompleteTodoListFailureAction({this.error});
+  LoadCompleteTodoListFailureAction({this.errorMessage});
 
   String toString() {
-    return 'LoadCompleteTodoListFailureAction{error: ${this.error}}';
+    return 'LoadCompleteTodoListFailureAction{errorMessage: ${this.errorMessage}}';
   }
 }
 
@@ -73,12 +73,12 @@ class LoadIncompleteTodoListSuccessAction {
 }
 
 class LoadIncompleteTodoListFailureAction {
-  final String error;
+  final String errorMessage;
 
-  LoadIncompleteTodoListFailureAction({this.error});
+  LoadIncompleteTodoListFailureAction({this.errorMessage});
 
   String toString() {
-    return 'LoadIncompleteTodoListFailureAction{error: ${this.error}}';
+    return 'LoadIncompleteTodoListFailureAction{errorMessage: ${this.errorMessage}}';
   }
 }
 
@@ -88,98 +88,86 @@ class AddTodoAction {
   AddTodoAction({this.todo});
 
   String toString() {
-    return 'AddTodoAction{}';
+    return 'AddTodoAction{todo: ${this.todo}';
   }
 }
 
 class AddTodoSuccessAction {
-  final String task;
-
-  AddTodoSuccessAction({this.task});
-
   String toString() {
     return 'AddTodoSuccessAction{}';
   }
 }
 
 class AddTodoFailureAction {
-  final String error;
+  final String errorMessage;
 
-  AddTodoFailureAction({@required this.error});
+  AddTodoFailureAction({@required this.errorMessage});
 
   String toString() {
-    return 'AddTodoFailureAction{error: ${this.error}}';
+    return 'AddTodoFailureAction{errorMessage: ${this.errorMessage}}';
   }
 }
 
 class EditTodoAction {
-  final String task;
+  final TodoModel todo;
 
-  EditTodoAction({this.task});
-
-  String toString() {
-    return 'EditTodoAction{}';
-  }
-}
-
-class DeleteTodoAction {
-  final String taskId;
-
-  DeleteTodoAction({this.taskId});
+  EditTodoAction({this.todo});
 
   String toString() {
-    return 'DeleteTodoAction{taskId: $taskId}';
-  }
-}
-
-class DeleteTodoSuccessAction {
-  final String id;
-
-  DeleteTodoSuccessAction({this.id});
-
-  String toString() {
-    return 'DeleteTodoSuccessAction{}';
-  }
-}
-
-class DeleteTodoFailureAction {
-  final String error;
-
-  DeleteTodoFailureAction({@required this.error});
-
-  String toString() {
-    return 'DeleteTodoFailureAction{error: ${this.error}}';
-  }
-}
-
-class EditingTodoAction {
-  String toString() {
-    return 'EditingTodoAction{}';
+    return 'EditTodoAction{todo: ${this.todo}';
   }
 }
 
 class EditTodoSuccessAction {
-  final String task;
-
-  EditTodoSuccessAction({this.task});
-
   String toString() {
     return 'EditTodoSuccessAction{}';
   }
 }
 
 class EditTodoFailureAction {
-  final String error;
+  final String errorMessage;
 
-  EditTodoFailureAction({@required this.error});
+  EditTodoFailureAction({@required this.errorMessage});
 
   String toString() {
-    return 'EditTodoFailureAction{error: ${this.error}}';
+    return 'EditTodoFailureAction{errorMessage: ${this.errorMessage}}';
+  }
+}
+
+class DeleteTodoAction {
+  final String todoId;
+
+  DeleteTodoAction({this.todoId});
+
+  String toString() {
+    return 'DeleteTodoAction{todoId: $todoId}';
+  }
+}
+
+class DeleteTodoSuccessAction {
+  String toString() {
+    return 'DeleteTodoSuccessAction{}';
+  }
+}
+
+class DeleteTodoFailureAction {
+  final String errorMessage;
+
+  DeleteTodoFailureAction({@required this.errorMessage});
+
+  String toString() {
+    return 'DeleteTodoFailureAction{errorMessage: ${this.errorMessage}}';
   }
 }
 
 class LoadingTodoAction {
   String toString() {
     return 'LoadingTodoAction{}';
+  }
+}
+
+class RefreshTodoAction {
+  String toString() {
+    return 'RefreshTodoAction{}';
   }
 }

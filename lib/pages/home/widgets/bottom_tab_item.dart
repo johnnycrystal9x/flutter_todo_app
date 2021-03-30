@@ -3,13 +3,17 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:phal_flutter_todo_app/configs/themes.dart';
 import 'package:phal_flutter_todo_app/data/db/models/tab_item_model.dart';
-import 'package:phal_flutter_todo_app/pages/home/widgets/tabbar_controller.dart';
+import 'package:phal_flutter_todo_app/pages/home/widgets/bottom_tab_controller.dart';
 
-class BottomBarItem extends StatelessWidget {
-  const BottomBarItem({Key key, this.tabItem, this.iconColor}) : super(key: key);
-
+class BottomTabItem extends StatelessWidget {
   final TabItemModel tabItem;
   final Color iconColor;
+
+  const BottomTabItem({
+    Key key,
+    this.tabItem,
+    this.iconColor,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +22,7 @@ class BottomBarItem extends StatelessWidget {
         type: MaterialType.transparency,
         child: InkWell(
           borderRadius: BorderRadius.circular(50),
-          onTap: () => Get.find<TabBarController>().onChangeTab(tabItem.type),
+          onTap: () => Get.find<BottomTabController>().onChangeTab(tabItem.type),
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 15),
             child: Column(

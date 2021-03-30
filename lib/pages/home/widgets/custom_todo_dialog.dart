@@ -1,23 +1,33 @@
+/// Created by JB Pha Le on 3/24/21.
+/// johnnycrystal9x@gmail.com
+
 import 'package:flutter/material.dart';
-import 'package:flutter_redux/flutter_redux.dart';
 import 'package:get/get.dart';
 import 'package:phal_flutter_todo_app/constants/dimens.dart';
 import 'package:phal_flutter_todo_app/data/db/models/todo_model.dart';
 import 'package:phal_flutter_todo_app/redux/actions/todo_action.dart';
-import 'package:phal_flutter_todo_app/redux/states/app_state.dart';
+import 'package:phal_flutter_todo_app/redux/selectors/app_selector.dart';
 
 class CustomTodoDialog extends StatefulWidget {
   final String title;
+  final TodoModel todoModel;
 
-  const CustomTodoDialog({Key key, this.title}) : super(key: key);
+  const CustomTodoDialog({Key key, this.title, this.todoModel}) : super(key: key);
 
   @override
   _CustomTodoDialogState createState() => _CustomTodoDialogState();
 }
 
 class _CustomTodoDialogState extends State<CustomTodoDialog> {
-  final _taskController = TextEditingController();
-  final _noteController = TextEditingController();
+  TextEditingController _taskController;
+  TextEditingController _noteController;
+
+  @override
+  void initState() {
+    _taskController = TextEditingController(text: widget.todoModel.text ?? "");
+    _noteController = TextEditingController(text: widget.todoModel.note ?? "");
+    super.initState();
+  }
 
   @override
   void dispose() {
@@ -79,19 +89,31 @@ class _CustomTodoDialogState extends State<CustomTodoDialog> {
                   ),
                   ElevatedButton(
                       onPressed: () {
-                        final todo = TodoModel(
-                          id: DateTime.now().millisecondsSinceEpoch.toString(),
-                          text: _taskController.text,
-                          note: _noteController.text,
-                          isDone: false,
-                          userId: "1",
-                        );
-                        if (todo.text.isNotEmpty && todo.note.isNotEmpty) {
-                          StoreProvider.of<AppState>(context).dispatch(AddTodoAction(todo: todo));
-                          Get.back();
+                        if (widget.title == "Add task") {
+                          final todoAdd = widget.todoModel.copyWith(
+                            id: DateTime.now().millisecondsSinceEpoch.toString(),
+                            text: _taskController.text,
+                            note: _noteController.text,
+                            isDone: false,
+                            userId: "1",
+                          );
+                          if (todoAdd.text.isNotEmpty && todoAdd.note.isNotEmpty) {
+                            storeSelector(context).dispatch(AddTodoAction(todo: todoAdd));
+                          } else {
+                            Get.snackbar("Warning", "Some field are empty!");
+                          }
                         } else {
-                          Get.snackbar("Warning", "Some field are empty!");
+                          final todoEdit = widget.todoModel.copyWith(
+                            text: _taskController.text,
+                            note: _noteController.text,
+                          );
+                          if (todoEdit.text.isNotEmpty && todoEdit.note.isNotEmpty) {
+                            storeSelector(context).dispatch(EditTodoAction(todo: todoEdit));
+                          } else {
+                            Get.snackbar("Warning", "Some field are empty!");
+                          }
                         }
+                        Get.back();
                       },
                       child: Padding(
                         padding: const EdgeInsets.only(left: 8, right: 8),

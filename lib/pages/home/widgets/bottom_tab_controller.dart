@@ -9,8 +9,8 @@ import 'package:phal_flutter_todo_app/pages/home/home_page.dart';
 import 'package:get/get.dart';
 import 'package:phal_flutter_todo_app/data/db/models/tab_item_model.dart';
 
-class TabBarController extends GetxController with WidgetsBindingObserver {
-  TabType tabType = TabType.all;
+class BottomTabController extends GetxController with WidgetsBindingObserver {
+  BottomTabType tabType = BottomTabType.all;
   bool isKeyboardVisible = false;
   DateTime _backButtonOnPressed;
 
@@ -51,21 +51,21 @@ class TabBarController extends GetxController with WidgetsBindingObserver {
     return true;
   }
 
-  Color tabColor(TabType type) {
+  Color tabColor(BottomTabType type) {
     if (tabType == type) {
       return AppColors.primaryColor;
     }
     return AppColors.textColor;
   }
 
-  void onChangeTab(TabType type) {
+  void onChangeTab(BottomTabType type) {
     tabType = type;
     update();
   }
 
   final tabs = <TabItemModel>[
-    TabItemModel('All', Images.iconTaskList, TabType.all),
-    TabItemModel('COMPLETE', Images.iconTaskComplete, TabType.complete),
-    TabItemModel('INCOMPLETE', Images.iconTaskIncomplete, TabType.incomplete),
+    TabItemModel('All', Images.iconTaskList, BottomTabType.all),
+    TabItemModel('COMPLETE', Images.iconTaskComplete, BottomTabType.complete),
+    TabItemModel('INCOMPLETE', Images.iconTaskIncomplete, BottomTabType.incomplete),
   ];
 }

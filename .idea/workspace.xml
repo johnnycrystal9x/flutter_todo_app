@@ -20,15 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38e7d1e2-1cd4-4075-95b3-4225fbdc9d17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/configs/themes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configs/themes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/dimens.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/dimens.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/db/models/tab_item_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/db/models/tab_item_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/db/models/todo_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/db/models/todo_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/home/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/bottom_bar_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/bottom_tab_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/tabbar_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/bottom_tab_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/login/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/login/login_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routers/app_routers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routers/app_routers.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/redux/actions/todo_action.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/actions/todo_action.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/utils.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +58,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
@@ -108,10 +108,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617036956131">
+    <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617076485964">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1280.720@0.25.1280.720" timestamp="1617036956131" />
+    <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1280.720@0.25.1280.720" timestamp="1617076485964" />
     <state x="100" y="125" width="1080" height="520" key="AVDManager" timestamp="1617038990049">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
@@ -144,10 +144,10 @@
       <screen x="0" y="25" width="1280" height="720" />
     </state>
     <state x="100" y="125" width="1080" height="520" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1280.720@0.25.1280.720" timestamp="1616836913097" />
-    <state x="422" y="169" width="858" height="576" key="find.popup" timestamp="1617041162549">
+    <state x="422" y="169" width="858" height="576" key="find.popup" timestamp="1617075576262">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state x="422" y="169" width="858" height="576" key="find.popup/0.25.1280.720@0.25.1280.720" timestamp="1617041162549" />
+    <state x="422" y="169" width="858" height="576" key="find.popup/0.25.1280.720@0.25.1280.720" timestamp="1617075576262" />
     <state x="305" y="69" width="670" height="676" key="search.everywhere.popup" timestamp="1616828616941">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
