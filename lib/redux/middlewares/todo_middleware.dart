@@ -89,7 +89,7 @@ Middleware<AppState> _addTodo() {
     next(action);
 
     // Add task to firebase
-    await _todoCollection.doc().set(action.todo.toJson()).then((value) {
+    await _todoCollection.doc(action.todo.id).set(action.todo.toJson()).then((value) {
       store.dispatch(AddTodoSuccessAction());
       store.dispatch(RefreshTodoAction());
     }).catchError(
@@ -119,7 +119,7 @@ Middleware<AppState> _deleteTodo() {
     next(action);
 
     // Add task to firebase
-    await _todoCollection.doc(action.todo.id).delete().then((value) {
+    await _todoCollection.doc(action.todoId).delete().then((value) {
       store.dispatch(DeleteTodoSuccessAction());
       store.dispatch(RefreshTodoAction());
     }).catchError(

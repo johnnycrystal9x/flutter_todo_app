@@ -24,8 +24,8 @@ class _CustomTodoDialogState extends State<CustomTodoDialog> {
 
   @override
   void initState() {
-    _taskController = TextEditingController(text: widget.todoModel.text ?? "");
-    _noteController = TextEditingController(text: widget.todoModel.note ?? "");
+    _taskController = TextEditingController(text: widget?.todoModel?.text ?? "");
+    _noteController = TextEditingController(text: widget?.todoModel?.note ?? "");
     super.initState();
   }
 
@@ -89,8 +89,8 @@ class _CustomTodoDialogState extends State<CustomTodoDialog> {
                   ),
                   ElevatedButton(
                       onPressed: () {
-                        if (widget.title == "Add task") {
-                          final todoAdd = widget.todoModel.copyWith(
+                        if (widget.title == "Add Task") {
+                          final todoAdd = TodoModel(
                             id: DateTime.now().millisecondsSinceEpoch.toString(),
                             text: _taskController.text,
                             note: _noteController.text,

@@ -20,17 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38e7d1e2-1cd4-4075-95b3-4225fbdc9d17" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/db/models/tab_item_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/db/models/tab_item_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/db/models/todo_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/db/models/todo_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/bottom_bar_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/bottom_tab_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/custom_todo_dialog.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/tabbar_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/bottom_tab_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/actions/todo_action.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/actions/todo_action.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/utils.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
@@ -112,30 +106,30 @@
       <screen x="0" y="25" width="1280" height="720" />
     </state>
     <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1280.720@0.25.1280.720" timestamp="1617076485964" />
-    <state x="100" y="125" width="1080" height="520" key="AVDManager" timestamp="1617038990049">
+    <state x="100" y="125" width="1080" height="520" key="AVDManager" timestamp="1617096664845">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state x="100" y="125" width="1080" height="520" key="AVDManager/0.25.1280.720@0.25.1280.720" timestamp="1617038990049" />
+    <state x="100" y="125" width="1080" height="520" key="AVDManager/0.25.1280.720@0.25.1280.720" timestamp="1617096664845" />
     <state x="639" y="216" key="FileChooserDialogImpl" timestamp="1617041129422">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
     <state x="639" y="216" key="FileChooserDialogImpl/0.25.1280.720@0.25.1280.720" timestamp="1617041129422" />
-    <state width="1238" height="332" key="GridCell.Tab.0.bottom" timestamp="1617043627087">
+    <state width="1238" height="332" key="GridCell.Tab.0.bottom" timestamp="1617097857049">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.bottom/0.25.1280.720@0.25.1280.720" timestamp="1617043627087" />
-    <state width="1238" height="332" key="GridCell.Tab.0.center" timestamp="1617043627086">
+    <state width="1238" height="332" key="GridCell.Tab.0.bottom/0.25.1280.720@0.25.1280.720" timestamp="1617097857049" />
+    <state width="1238" height="332" key="GridCell.Tab.0.center" timestamp="1617097857049">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.center/0.25.1280.720@0.25.1280.720" timestamp="1617043627086" />
-    <state width="1238" height="332" key="GridCell.Tab.0.left" timestamp="1617043627085">
+    <state width="1238" height="332" key="GridCell.Tab.0.center/0.25.1280.720@0.25.1280.720" timestamp="1617097857049" />
+    <state width="1238" height="332" key="GridCell.Tab.0.left" timestamp="1617097857049">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.left/0.25.1280.720@0.25.1280.720" timestamp="1617043627085" />
-    <state width="1238" height="332" key="GridCell.Tab.0.right" timestamp="1617043627086">
+    <state width="1238" height="332" key="GridCell.Tab.0.left/0.25.1280.720@0.25.1280.720" timestamp="1617097857049" />
+    <state width="1238" height="332" key="GridCell.Tab.0.right" timestamp="1617097857049">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
-    <state width="1238" height="332" key="GridCell.Tab.0.right/0.25.1280.720@0.25.1280.720" timestamp="1617043627086" />
+    <state width="1238" height="332" key="GridCell.Tab.0.right/0.25.1280.720@0.25.1280.720" timestamp="1617097857049" />
     <state x="141" y="25" width="997" height="720" key="SettingsEditor" timestamp="1617037501300">
       <screen x="0" y="25" width="1280" height="720" />
     </state>
@@ -155,9 +149,42 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
+          <line>121</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
+          <line>106</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
+          <line>122</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/redux/middlewares/todo_middleware.dart</url>
+          <line>125</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart</url>
+          <line>175</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint suspend="THREAD" type="dart-exception" />
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="FlutterRunConfigurationType">
+        <watch expression="action.todoId" />
+        <watch expression="widget.todoList[index].id" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
