@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38e7d1e2-1cd4-4075-95b3-4225fbdc9d17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/redux/reducers/todo_reducer_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_resources/todo_state_resource.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,7 @@
       <recent name="$PROJECT_DIR$/lib/pages/home/models" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter Test.tests in todo_middleware_test.dart">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
@@ -169,8 +167,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart</url>
-          <line>175</line>
+          <line>170</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart</url>
+          <line>89</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart</url>
+          <line>90</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart</url>
+          <line>75</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/pages/home/widgets/todo_component.dart</url>
+          <line>73</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -178,10 +196,6 @@
       </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <configuration name="FlutterRunConfigurationType">
-        <watch expression="action.todoId" />
-        <watch expression="widget.todoList[index].id" />
-      </configuration>
       <configuration name="FlutterTestConfigType">
         <watch expression="_store.state" />
       </configuration>

@@ -73,6 +73,7 @@ class _TodoListComponentState extends State<TodoListComponent> {
               onChanged: (v) {
                 var changed = widget.todoList[index].copyWith(isDone: v);
                 widget.todoList[index] = changed;
+                storeSelector(context).dispatch(EditTodoAction(todo: widget.todoList[index]));
               },
             ),
             trailing: Wrap(
